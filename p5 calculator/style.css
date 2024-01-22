@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+*{
+    font-family: 'Comfortaa', cursive;
+    padding: 0;
+    margin: 50hv;
+    box-sizing: border-box;
+}
+:root {
+--gap: 15px;
+--paynes-gray: #545f66;
+--cadet-gray: #829399;
+--mint-green: #d0f4ea;
+--tea-green: #e8fcc2;
+--pistachio: #b1cc74;
+--light-color: #fff;
+--dark-color: #222;
+}
+
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100hv;
+   /* background: linear-gradient(135deg, rgb(169, 176, 179), rgb(87, 88, 92)); */
+}
+
+.c1 {
+    background-color: pink;
+    max-width: 420px;
+    width: 90%;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: var(--gap);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.c1 output{
+    grid-column: span 4;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    font-size: 2.5rem;
+    text-align: end;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.c1 button{
+    background-color: var(--mint-green);
+    color: var(--dark-color);
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    transition: 0.2s;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+.c1 button[data-equals]{
+    background-color: var(--pistachio);
+    grid-row: span 4;
+}
+
+.c1 button:active{
+   background-color: var(--dark-color);
+   color: var(--light-color);
+}
